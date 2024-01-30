@@ -15,20 +15,20 @@
 					<legend>Login account</legend>
 					<label for="email">Your email</label>
 					<br />
-					<input id="email" type="email" />
+					<input id="email" type="email" name="email"/>
 					<br />
 					<br />
 					<label for="password">Password</label>
 					<br />
-					<input id="password" type="password" required />
+					<input id="password" type="password" required name="password"/>
 					<br />
 					<br />
 					<label for="confirm_password">Confirm your password</label>
 					<br />
-					<input id="confirm_password" type="password" required />
+					<input id="confirm_password" type="confirm_password" required name="password"/>
 					<br />
-					<p>Choose type of subscribe</p>
-					<select>
+					<p>Choose type of subscribing:</p>
+					<select name="subscribing">
 						<option value="Junior">Junior - 9.99$</option>
 						<option value="Middle">Middle - 29.99$</option>
 						<option value="Senior">Senior - 49.99$</option>
@@ -42,32 +42,32 @@
 					<legend>Registration</legend>
 					<label for="name">Name</label>
 					<br />
-					<input id="name" type="text" />
+					<input id="name" type="text" name="name"/>
 					<br />
 					<br />
 					<label for="mail">Email</label>
 					<br />
-					<input id="mail" type="email" />
+					<input id="mail" type="email" name="email"/>
 					<br />
 					<br />
 					<label for="tel">Your number</label>
 					<br />
-					<input id="tel" type="tel" />
+					<input id="tel" type="tel" name="tel"/>
 					<br />
 					<br />
 					<label for="pass">Password</label>
 					<br />
-					<input id="pass" type="password" required />
+					<input id="pass" type="password" required name="password"/>
 					<br />
 					<br />
 					<label for="confirm_pass">Confirm your password</label>
 					<br />
-					<input id="confirm_pass" type="password" required />
+					<input id="confirm_pass" type="password" required name="confirm_password"/>
 					<br />
 					<p>Choose your birth date</p>
 					<input type="date" />
 					<p>Who are you in web developing</p>
-					<select>
+					<select name="role">
 						<option value="front-end">Front-end</option>
 						<option value="back-end">Back-end</option>
 					</select>
@@ -75,7 +75,7 @@
 					<br />
 					<label for="years">How many years you in web developing</label>
 					<br />
-					<input id="years" type="number" min="1" step="1" />
+					<input id="years" type="number" min="1" step="1" name="year"/>
 					<br />
 					<br />
 					<textarea
@@ -85,8 +85,8 @@
 						placeholder="Write about you:"
 					></textarea>
 					<br />
-					<p>Choose type of subscribe:</p>
-					<select>
+					<p>Choose type of subscribing:</p>
+					<select name="subscribing">
 						<option value="Junior">Junior - 9.99$</option>
 						<option value="Middle">Middle - 29.99$</option>
 						<option value="Senior">Senior - 49.99$</option>
