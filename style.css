@@ -1,0 +1,23 @@
+body {
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header {
+	text-align: center;
+}
+p.reset-margin {
+	margin: 0px;
+}
+.text {
+	color: rgb(100, 79, 190);
+}
+.button-send {
+	color: black;
+	background-color: rgb(80, 201, 80);
+	border: 1px solid green;
+}
+.button-reset {
+	color: black;
+	background-color: rgb(201, 80, 80);
+	border: 1px solid red;
+}
