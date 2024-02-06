@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
 		<title>Forms and inputs</title>
 	</head>
 	<body>
@@ -10,93 +11,120 @@
 			<h1>Пример регистрации</h1>
 		</header>
 		<main>
-			<form name="registration">
-				<fieldset>
-					<legend>Login account</legend>
-					<label for="email">Your email</label>
-					<br />
-					<input id="email" type="email" name="email"/>
-					<br />
-					<br />
-					<label for="password">Password</label>
-					<br />
-					<input id="password" type="password" required name="password"/>
-					<br />
-					<br />
-					<label for="confirm_password">Confirm your password</label>
-					<br />
-					<input id="confirm_password" type="confirm_password" required name="password"/>
-					<br />
-					<p>Choose type of subscribing:</p>
-					<select name="subscribing">
-						<option value="Junior">Junior - 9.99$</option>
-						<option value="Middle">Middle - 29.99$</option>
-						<option value="Senior">Senior - 49.99$</option>
-					</select>
-					<br />
-					<br />
-					<button type="submit">Send form</button>
-					<button type="reset">Reset form</button>
-				</fieldset>
-				<fieldset name="sign_up">
-					<legend>Registration</legend>
-					<label for="name">Name</label>
-					<br />
-					<input id="name" type="text" name="name"/>
-					<br />
-					<br />
-					<label for="mail">Email</label>
-					<br />
-					<input id="mail" type="email" name="email"/>
-					<br />
-					<br />
-					<label for="tel">Your number</label>
-					<br />
-					<input id="tel" type="tel" name="tel"/>
-					<br />
-					<br />
-					<label for="pass">Password</label>
-					<br />
-					<input id="pass" type="password" required name="password"/>
-					<br />
-					<br />
-					<label for="confirm_pass">Confirm your password</label>
-					<br />
-					<input id="confirm_pass" type="password" required name="confirm_password"/>
-					<br />
-					<p>Choose your birth date</p>
-					<input type="date" />
-					<p>Who are you in web developing</p>
-					<select name="role">
-						<option value="front-end">Front-end</option>
-						<option value="back-end">Back-end</option>
-					</select>
-					<br />
-					<br />
-					<label for="years">How many years you in web developing</label>
-					<br />
-					<input id="years" type="number" min="1" step="1" name="year"/>
-					<br />
-					<br />
-					<textarea
-						rows="7"
-						cols="25"
-						name="about_you"
-						placeholder="Write about you:"
-					></textarea>
-					<br />
-					<p>Choose type of subscribing:</p>
-					<select name="subscribing">
-						<option value="Junior">Junior - 9.99$</option>
-						<option value="Middle">Middle - 29.99$</option>
-						<option value="Senior">Senior - 49.99$</option>
-					</select>
-					<br />
-					<br />
-					<button type="submit">Send form</button>
-					<button type="reset">Reset form</button>
-				</fieldset>
-			</form>
+			<div class="login">
+				<form name="login">
+					<fieldset>
+						<legend class="text">Login account</legend>
+						<label for="email" class="text">Your email</label>
+						<br />
+						<input id="email" type="email" name="email" />
+						<br />
+						<br />
+						<label for="password" class="text">Password</label>
+						<br />
+						<input id="password" type="password" required name="password" />
+						<br />
+						<br />
+						<label for="confirm_password" class="text"
+							>Confirm your password</label
+						>
+						<br />
+						<br />
+						<input
+							id="confirm_password"
+							type="confirm_password"
+							required
+							name="password"
+						/>
+						<br />
+						<p class="reset-margin text">Choose type of subscribing:</p>
+						<select name="subscribing">
+							<option value="Junior" class="text">Junior - 9.99$</option>
+							<option value="Middle" class="text">Middle - 29.99$</option>
+							<option value="Senior" class="text">Senior - 49.99$</option>
+						</select>
+						<br />
+						<br />
+						<button type="submit" class="button-send">Send form</button>
+						<button type="reset" class="button-reset">Reset form</button>
+					</fieldset>
+				</form>
+			</div>
+			<div class="sign_up">
+				<form name="sign_up">
+					<fieldset>
+						<legend class="text">Registration</legend>
+						<label for="name" class="text">Name</label>
+						<br />
+						<input id="name" type="text" name="name" />
+						<br />
+						<br />
+						<label for="mail" class="text">Email</label>
+						<br />
+						<input id="mail" type="email" name="email" />
+						<br />
+						<br />
+						<label for="tel" class="text">Your number</label>
+						<br />
+						<input id="tel" type="tel" name="tel" />
+						<br />
+						<br />
+						<label for="pass" class="text">Password</label>
+						<br />
+						<input id="pass" type="password" required name="password" />
+						<br />
+						<br />
+						<label for="confirm_pass" class="text">Confirm your password</label>
+						<br />
+						<input
+							id="confirm_pass"
+							type="password"
+							required
+							name="confirm_password"
+						/>
+						<br />
+						<br />
+						<label for="birth" class="text">Choose your birth date</label>
+						<br />
+						<input id="birth" type="date" />
+						<br />
+						<br />
+						<p class="reset-margin text">Who are you in web developing</p>
+						<select name="role">
+							<option value="front-end" class="text">Front-end</option>
+							<option value="back-end" class="text">Back-end</option>
+						</select>
+						<br />
+						<br />
+						<label for="years" class="text"
+							>How many years you in web developing</label
+						>
+						<br />
+						<input id="years" type="number" min="1" step="1" name="year" />
+						<br />
+						<br />
+						<p class="reset-margin text">Write about you:</p>
+						<textarea
+							rows="7"
+							cols="25"
+							name="about_you"
+							placeholder="Write about you:"
+						></textarea>
+						<br />
+						<br />
+						<p class="reset-margin text">Choose type of subscribing:</p>
+						<select name="subscribing">
+							<option value="Junior" class="text">Junior - 9.99$</option>
+							<option value="Middle" class="text">Middle - 29.99$</option>
+							<option value="Senior" class="text">Senior - 49.99$</option>
+						</select>
+						<br />
+						<br />
+						<button type="submit" class="button-send">Send form</button>
+						<button type="reset" class="button-reset">Reset form</button>
+					</fieldset>
+				</form>
+			</div>
 		</main>
 	</body>
 </html>
